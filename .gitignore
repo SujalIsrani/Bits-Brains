@@ -1,0 +1,29 @@
+# Ignore virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore models and data files (optional—comment out if you want to track them)
+models/
+data/
+*.pkl
+*.csv
+
+# Ignore Streamlit’s generated config
+.streamlit/
+
+# VSCode or PyCharm project files (optional)
+.vscode/
+.idea/
