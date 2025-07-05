@@ -34,4 +34,3 @@ graph TD
     C --> E[SHAP Explanations]
     D --> F[Patient Dashboard]
     E --> G[Clinician Dashboard]
-    D --> H(Drug Efficacy Analysis)
