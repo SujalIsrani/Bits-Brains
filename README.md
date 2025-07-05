@@ -28,10 +28,10 @@ Parkinson's disease progression is currently tracked through:
 ## 🧠 How It Works
 ```mermaid
 graph TD
-    A[Smartphone Keystrokes] --> B(Feature Extraction)
+    A[Keystrokes Data] --> B(Feature Extraction)
     B --> C{ML Model Inference}
     C --> D[Progression Score]
     C --> E[SHAP Explanations]
-    D --> F[Patient App]
+    D --> F[Patient Dashboard]
     E --> G[Clinician Dashboard]
     D --> H(Drug Efficacy Analysis)
