@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to NeuroType</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/736x/91/70/17/917017949818ccfe4475e5f7f65979b6.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #f0f0f0;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 50px 40px;
+            border-radius: 12px;
+            max-width: 650px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            font-size: 48px;
+            color: #23bbad; /* Teal for logo */
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 18px;
+            color: #23bbad; /* Teal for tagline */
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 15px;
+            color: #ccc;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        input[type="text"] {
+            padding: 12px;
+            width: 80%;
+            max-width: 300px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 15px;
+            outline: none;
+        }
+        button {
+            padding: 12px 30px;
+            border-radius: 6px;
+            border: none;
+            background-color: #ff6da2; /* Pink for button */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        button:hover {
+            background-color: #e65590; /* Darker pink for hover */
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="logo">NeuroType</div>
+        <div class="tagline">Typing Biomarkers for Early Parkinson’s Detection</div>
+        <div class="description">
+            <p><strong>NeuroType</strong> is an AI-powered typing test designed to detect subtle motor signs associated with Parkinson’s Disease by analyzing how you type.</p>
+            <p>In just 5 minutes, by typing a simple paragraph, NeuroType captures your typing rhythm, speed, and keypress patterns to generate an early assessment of Parkinsonian signs—non-invasively and remotely.</p>
+            <p>This tool is intended as an assistive screening aid, not a diagnosis. Your privacy is respected at all times.</p>
+        </div>
+        <form method="POST">
+            <input type="text" name="username" placeholder="Enter your name" required>
+            <br>
+            <button type="submit">Start Typing Test</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2025 NeuroType. All rights reserved.
+    </footer>
+</body>
+</html>
