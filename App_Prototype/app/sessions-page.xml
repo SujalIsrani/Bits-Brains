@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-gray-100">
+  <ActionBar title="Session History" class="bg-blue-500 text-white">
+    <NavigationButton text="Back" tap="onBack" />
+  </ActionBar>
+  
+  <StackLayout class="p-4">
+    <Label text="Past Typing Sessions" class="text-xl font-bold mb-4" />
+    
+    <ListView id="sessionsList" itemTap="onSessionTap" class="metric-card" height="70%">
+      <ListView.itemTemplate>
+        <StackLayout class="p-4 border-b border-gray-200">
+          <Label text="{{ timestamp }}" class="text-sm font-bold text-gray-800" />
+          <GridLayout columns="*, *" class="mt-2">
+            <Label col="0" text="{{ 'Duration: ' + duration }}" class="text-sm text-gray-600" />
+            <Label col="1" text="{{ 'Keystrokes: ' + keystrokes }}" class="text-sm text-gray-600 text-right" />
+          </GridLayout>
+          <GridLayout columns="*, *" class="mt-1">
+            <Label col="0" text="{{ 'Speed: ' + speed }}" class="text-sm text-gray-600" />
+            <Label col="1" text="{{ 'Backspace: ' + backspaceRate }}" class="text-sm text-gray-600 text-right" />
+          </GridLayout>
+          <GridLayout columns="*, *" class="mt-1">
+            <Label col="0" text="{{ 'Hold Time: ' + holdTime }}" class="text-sm text-gray-600" />
+            <Label col="1" text="{{ 'Flight Time: ' + flightTime }}" class="text-sm text-gray-600 text-right" />
+          </GridLayout>
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+    
+    <Button text="Clear All Data" tap="onClearData" class="bg-red-500 text-white font-bold py-2 px-4 rounded mt-4" />
+  </StackLayout>
+</Page>

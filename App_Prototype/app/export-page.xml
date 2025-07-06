@@ -1,0 +1,30 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-gray-100">
+  <ActionBar title="Export Data" class="bg-blue-500 text-white">
+    <NavigationButton text="Back" tap="onBack" />
+  </ActionBar>
+  
+  <StackLayout class="p-6">
+    <Label text="Data Export" class="text-2xl font-bold mb-4" />
+    <Label text="Export your typing behavior data for clinical analysis or research purposes." class="text-gray-600 mb-6" textWrap="true" />
+    
+    <StackLayout class="metric-card mb-4">
+      <Label text="CSV Export" class="text-lg font-semibold mb-2" />
+      <Label text="Export data in CSV format for spreadsheet analysis and statistical software." class="text-gray-600 mb-4" textWrap="true" />
+      <Button text="Export as CSV" tap="onExportCSV" class="bg-green-500 text-white font-bold py-3 px-6 rounded-lg" />
+    </StackLayout>
+    
+    <StackLayout class="metric-card mb-4">
+      <Label text="JSON Export" class="text-lg font-semibold mb-2" />
+      <Label text="Export data in JSON format with complete keystroke timing data for advanced analysis." class="text-gray-600 mb-4" textWrap="true" />
+      <Button text="Export as JSON" tap="onExportJSON" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg" />
+    </StackLayout>
+    
+    <StackLayout class="metric-card">
+      <Label text="Privacy Notice" class="text-lg font-semibold mb-2" />
+      <Label text="• Only typing behavior metrics are stored, not actual text content
+• All data is processed and stored locally on your device
+• No data is transmitted to external servers
+• Exported files can be shared via email, cloud storage, or other apps" class="text-gray-600 text-sm" textWrap="true" />
+    </StackLayout>
+  </StackLayout>
+</Page>

@@ -1,0 +1,107 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-white">
+  <ScrollView>
+    <StackLayout class="p-6">
+      <!-- App Header -->
+      <StackLayout class="text-center mb-8">
+        <Label text="NeuroType Keyboard" class="text-3xl font-bold text-gray-800 mb-2" />
+        <Label text="Tracking typing behavior for medical analysis" class="text-lg text-gray-600" textWrap="true" />
+      </StackLayout>
+
+      <!-- App Icon/Illustration -->
+      <StackLayout class="bg-gray-900 rounded-2xl p-6 mb-8 mx-4">
+        <GridLayout rows="auto, auto, auto, auto, auto" columns="*, *, *, *, *, *, *, *, *, *" class="mb-4">
+          <!-- Simulated keyboard layout -->
+          <Label row="0" col="0" text="1" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="1" text="2" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="2" text="3" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="3" text="4" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="4" text="5" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="5" text="6" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="6" text="7" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="7" text="8" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="8" text="9" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="0" col="9" text="0" class="text-orange-400 text-center text-xs p-1" />
+          
+          <Label row="1" col="0" text="Q" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="1" text="W" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="2" text="E" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="3" text="R" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="4" text="T" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="5" text="Y" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="6" text="U" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="7" text="I" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="8" text="O" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="1" col="9" text="P" class="text-orange-400 text-center text-xs p-1" />
+          
+          <Label row="2" col="0" text="A" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="1" text="S" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="2" text="D" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="3" text="F" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="4" text="G" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="5" text="H" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="6" text="J" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="7" text="K" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="8" text="L" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="2" col="9" text="⌫" class="text-red-400 text-center text-xs p-1" />
+          
+          <Label row="3" col="0" text="Z" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="1" text="X" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="2" text="C" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="3" text="V" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="4" text="B" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="5" text="N" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="6" text="M" class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="7" text="," class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="8" text="." class="text-orange-400 text-center text-xs p-1" />
+          <Label row="3" col="9" text="?" class="text-orange-400 text-center text-xs p-1" />
+          
+          <Label row="4" col="2" colSpan="6" text="Space" class="text-green-400 text-center text-xs p-1" />
+        </GridLayout>
+      </StackLayout>
+
+      <!-- About Section -->
+      <StackLayout class="mb-6">
+        <Label text="About This App" class="text-xl font-bold text-gray-800 mb-3" />
+        <Label text="NeuroType Keyboard is designed to track typing behavior for medical analysis, particularly for Parkinson's disease detection and monitoring." class="text-gray-600 mb-3" textWrap="true" />
+        <Label text="When you start the typing test, you must type for at least 1 minute. The 'Done' button will only become available after the timer completes." class="text-gray-600 mb-3" textWrap="true" />
+        <Label text="This app provides a custom keyboard that tracks keystroke dynamics and calculates metrics that may be useful for medical professionals." class="text-gray-600" textWrap="true" />
+      </StackLayout>
+
+      <!-- Important Limitations -->
+      <StackLayout class="mb-6">
+        <Label text="Important Limitations" class="text-xl font-bold text-gray-800 mb-3" />
+        <Label text="This is a demonstration app" class="text-gray-800 font-semibold mb-2" />
+        <Label text="that simulates a system-wide keyboard. For a true system-wide keyboard that works in all apps, a native Android Input Method Editor (IME) would need to be developed." class="text-gray-600 mb-3" textWrap="true" />
+        <Label text="The keyboard in this app will only work within the app itself, but it demonstrates the core functionality of tracking typing behavior and exporting the data for analysis." class="text-gray-600" textWrap="true" />
+      </StackLayout>
+
+      <!-- Features -->
+      <StackLayout class="mb-8">
+        <Label text="Features" class="text-xl font-bold text-gray-800 mb-4" />
+        
+        <GridLayout columns="auto, *" class="mb-3">
+          <Label col="0" text="📊" class="text-2xl mr-3" />
+          <Label col="1" text="Track keystroke dynamics" class="text-gray-700 font-medium" />
+        </GridLayout>
+        
+        <GridLayout columns="auto, *" class="mb-3">
+          <Label col="0" text="👤" class="text-2xl mr-3" />
+          <Label col="1" text="Patient metadata management" class="text-gray-700 font-medium" />
+        </GridLayout>
+        
+        <GridLayout columns="auto, *" class="mb-3">
+          <Label col="0" text="📋" class="text-2xl mr-3" />
+          <Label col="1" text="Export data as CSV" class="text-gray-700 font-medium" />
+        </GridLayout>
+        
+        <GridLayout columns="auto, *" class="mb-3">
+          <Label col="0" text="⌨️" class="text-2xl mr-3" />
+          <Label col="1" text="Custom keyboard interface" class="text-gray-700 font-medium" />
+        </GridLayout>
+      </StackLayout>
+
+      <!-- Get Started Button -->
+      <Button text="Get Started" tap="onGetStarted" class="bg-blue-500 text-white font-bold py-4 px-6 rounded-lg text-lg" />
+    </StackLayout>
+  </ScrollView>
+</Page>

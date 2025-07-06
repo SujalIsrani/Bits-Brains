@@ -1,0 +1,102 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-gray-100">
+  <ActionBar title="NeuroType Keyboard" class="bg-blue-500 text-white">
+    <NavigationButton text="Settings" tap="onViewSessions" />
+  </ActionBar>
+  
+  <ScrollView>
+    <StackLayout class="p-4">
+      <!-- Status Panel -->
+      <StackLayout class="metric-card session-active mb-4">
+        <Label id="timerLabel" text="Ready to start" class="timer-display text-center mb-2" />
+        <GridLayout columns="*, *" class="mb-2">
+          <Label id="keystrokeLabel" col="0" text="Keystrokes: 0" class="text-lg font-semibold" />
+          <Label id="speedLabel" col="1" text="Speed: 0.0 keys/min" class="text-lg font-semibold text-right" />
+        </GridLayout>
+        <StackLayout class="progress-bar mb-4">
+          <StackLayout class="progress-fill" width="0%" />
+        </StackLayout>
+        <GridLayout columns="*, *" class="space-x-2">
+          <Button id="startButton" col="0" text="Start Session" tap="onStartSession" class="bg-green-500 text-white font-bold py-2 px-4 rounded" />
+          <Button id="doneButton" col="1" text="End Session" tap="onEndSession" class="bg-red-500 text-white font-bold py-2 px-4 rounded" isEnabled="false" />
+        </GridLayout>
+      </StackLayout>
+
+      <!-- Typing Area -->
+      <StackLayout class="metric-card mb-4">
+        <Label text="Typing Area" class="text-lg font-semibold mb-2" />
+        <TextView id="typingArea" class="typing-area" hint="Start typing here..." isEnabled="false" />
+      </StackLayout>
+
+      <!-- Custom Keyboard -->
+      <StackLayout class="metric-card">
+        <Label text="Custom Keyboard" class="text-lg font-semibold mb-2" />
+        <GridLayout id="keyboardContainer" rows="auto, auto, auto, auto, auto" columns="*, *, *, *, *, *, *, *, *, *">
+          
+          <!-- Row 1: Numbers -->
+          <Button row="0" col="0" text="1" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="1" text="2" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="2" text="3" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="3" text="4" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="4" text="5" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="5" text="6" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="6" text="7" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="7" text="8" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="8" text="9" tap="onKeyPress" class="keyboard-key" />
+          <Button row="0" col="9" text="0" tap="onKeyPress" class="keyboard-key" />
+          
+          <!-- Row 2: QWERTY -->
+          <Button row="1" col="0" text="Q" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="1" text="W" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="2" text="E" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="3" text="R" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="4" text="T" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="5" text="Y" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="6" text="U" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="7" text="I" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="8" text="O" tap="onKeyPress" class="keyboard-key" />
+          <Button row="1" col="9" text="P" tap="onKeyPress" class="keyboard-key" />
+          
+          <!-- Row 3: ASDF -->
+          <Button row="2" col="0" text="A" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="1" text="S" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="2" text="D" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="3" text="F" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="4" text="G" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="5" text="H" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="6" text="J" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="7" text="K" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="8" text="L" tap="onKeyPress" class="keyboard-key" />
+          <Button row="2" col="9" text="⌫" tap="onKeyPress" class="keyboard-key backspace" />
+          
+          <!-- Row 4: ZXCV -->
+          <Button row="3" col="0" text="Z" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="1" text="X" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="2" text="C" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="3" text="V" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="4" text="B" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="5" text="N" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="6" text="M" tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="7" text="," tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="8" text="." tap="onKeyPress" class="keyboard-key" />
+          <Button row="3" col="9" text="?" tap="onKeyPress" class="keyboard-key" />
+          
+          <!-- Row 5: Space and controls -->
+          <Button row="4" col="0" text="!" tap="onKeyPress" class="keyboard-key" />
+          <Button row="4" col="1" text="@" tap="onKeyPress" class="keyboard-key" />
+          <Button row="4" col="2" text="#" tap="onKeyPress" class="keyboard-key" />
+          <Button row="4" col="3" colSpan="4" text="Space" tap="onKeyPress" class="keyboard-key special" />
+          <Button row="4" col="7" text=":" tap="onKeyPress" class="keyboard-key" />
+          <Button row="4" col="8" text=";" tap="onKeyPress" class="keyboard-key" />
+          <Button row="4" col="9" text="'" tap="onKeyPress" class="keyboard-key" />
+          
+        </GridLayout>
+      </StackLayout>
+
+      <!-- Action Buttons -->
+      <GridLayout columns="*, *" class="space-x-2 mt-4">
+        <Button col="0" text="View Sessions" tap="onViewSessions" class="bg-blue-500 text-white font-bold py-2 px-4 rounded" />
+        <Button col="1" text="Export Data" tap="onExportData" class="bg-purple-500 text-white font-bold py-2 px-4 rounded" />
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</Page>

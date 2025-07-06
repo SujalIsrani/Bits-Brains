@@ -1,0 +1,42 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="bg-white">
+  <ActionBar title="NeuroType Setup" class="bg-blue-500 text-white" />
+  
+  <ScrollView class="p-6">
+    <StackLayout class="space-y-4">
+      <Label text="Patient Information" class="text-2xl font-bold text-gray-800 mb-4" />
+      
+      <StackLayout class="metric-card">
+        <Label text="Patient ID *" class="text-sm font-medium text-gray-600 mb-2" />
+        <TextField id="patientId" hint="Enter patient ID (e.g., P001)" class="border border-gray-300 rounded-lg p-3" />
+      </StackLayout>
+
+      <StackLayout class="metric-card">
+        <Label text="Diagnosis" class="text-sm font-medium text-gray-600 mb-2" />
+        <GridLayout columns="auto, *" class="items-center">
+          <Label col="0" text="Parkinson's Disease" class="text-base" />
+          <Switch id="parkinsonsSwitch" col="1" class="ml-4" />
+        </GridLayout>
+      </StackLayout>
+
+      <StackLayout class="metric-card">
+        <Label text="UPDRS Score *" class="text-sm font-medium text-gray-600 mb-2" />
+        <TextField id="updrsScore" hint="0-132" keyboardType="number" class="border border-gray-300 rounded-lg p-3" />
+        <Label text="Unified Parkinson's Disease Rating Scale score" class="text-xs text-gray-500 mt-1" />
+      </StackLayout>
+
+      <StackLayout class="metric-card">
+        <Label text="Tremor Severity *" class="text-sm font-medium text-gray-600 mb-2" />
+        <TextField id="tremorSeverity" hint="0.1-2.0" keyboardType="number" class="border border-gray-300 rounded-lg p-3" />
+        <Label text="Tremor severity rating (0.1 = minimal, 2.0 = severe)" class="text-xs text-gray-500 mt-1" />
+      </StackLayout>
+
+      <StackLayout class="metric-card">
+        <Label text="Medication Status *" class="text-sm font-medium text-gray-600 mb-2" />
+        <TextField id="medicationStatus" hint="On/Off/NA" class="border border-gray-300 rounded-lg p-3" />
+        <Label text="Current medication status" class="text-xs text-gray-500 mt-1" />
+      </StackLayout>
+
+      <Button text="Continue to App" tap="onContinue" class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg mt-6" />
+    </StackLayout>
+  </ScrollView>
+</Page>

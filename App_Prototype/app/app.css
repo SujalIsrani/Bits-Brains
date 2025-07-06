@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the keyboard app */
+.keyboard-key {
+  background-color: #f0f0f0;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  margin: 2px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.keyboard-key:active {
+  background-color: #e0e0e0;
+  transform: scale(0.95);
+}
+
+.keyboard-key.special {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.keyboard-key.backspace {
+  background-color: #f44336;
+  color: white;
+}
+
+.metric-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.session-active {
+  background-color: #e8f5e8;
+  border-left: 4px solid #4CAF50;
+}
+
+.timer-display {
+  font-family: monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+.typing-area {
+  background-color: #fafafa;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 120px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #4CAF50;
+  height: 100%;
+  transition: width 0.3s ease;
+}
