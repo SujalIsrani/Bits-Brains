@@ -9,9 +9,9 @@ import shap
 
 
 # Load models (update paths as needed)
-updrs_model = joblib.load("updrs_model.pkl")
-tremor_model = joblib.load("tremor_model.pkl")
-diagnosis_model = joblib.load("diagnosis_model.pkl")
+updrs_model = joblib.load("model files/updrs_model.pkl")
+tremor_model = joblib.load("model files/tremor_model.pkl")
+diagnosis_model = joblib.load("model files/diagnosis_model.pkl")
 
 st.title("Parkinson's Keystroke Analysis Dashboard")
 
