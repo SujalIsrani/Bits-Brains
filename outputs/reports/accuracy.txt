@@ -1,0 +1,64 @@
+🔍 Logistic Regression Accuracy: 87.50%
+              precision    recall  f1-score   support
+
+     Healthy       0.88      0.88      0.88         8
+          PD       0.88      0.88      0.88         8
+
+    accuracy                           0.88        16
+   macro avg       0.88      0.88      0.88        16
+weighted avg       0.88      0.88      0.88        16
+
+
+🔍 Random Forest Accuracy: 93.75%
+              precision    recall  f1-score   support
+
+     Healthy       1.00      0.88      0.93         8
+          PD       0.89      1.00      0.94         8
+
+    accuracy                           0.94        16
+   macro avg       0.94      0.94      0.94        16
+weighted avg       0.94      0.94      0.94        16
+
+
+🔍 Gradient Boosting Accuracy: 87.50%
+              precision    recall  f1-score   support
+
+     Healthy       0.88      0.88      0.88         8
+          PD       0.88      0.88      0.88         8
+
+    accuracy                           0.88        16
+   macro avg       0.88      0.88      0.88        16
+weighted avg       0.88      0.88      0.88        16
+
+
+🔍 SVM (Linear) Accuracy: 81.25%
+              precision    recall  f1-score   support
+
+     Healthy       0.78      0.88      0.82         8
+          PD       0.86      0.75      0.80         8
+
+    accuracy                           0.81        16
+   macro avg       0.82      0.81      0.81        16
+weighted avg       0.82      0.81      0.81        16
+
+
+🔍 SVM (RBF) Accuracy: 93.75%
+              precision    recall  f1-score   support
+
+     Healthy       1.00      0.88      0.93         8
+          PD       0.89      1.00      0.94         8
+
+    accuracy                           0.94        16
+   macro avg       0.94      0.94      0.94        16
+weighted avg       0.94      0.94      0.94        16
+
+
+🔍 KNN Accuracy: 81.25%
+              precision    recall  f1-score   support
+
+     Healthy       1.00      0.62      0.77         8
+          PD       0.73      1.00      0.84         8
+
+    accuracy                           0.81        16
+   macro avg       0.86      0.81      0.81        16
+weighted avg       0.86      0.81      0.81        16
