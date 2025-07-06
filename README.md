@@ -1,10 +1,10 @@
-# NeuroKey: Parkinson's Disease Progression Tracker
+# NeuroType: Parkinson's Disease Progression Tracker
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-NeuroKey is an AI-powered smartphone application that passively monitors Parkinson's Disease (PD) progression using keystroke dynamics. By analyzing natural typing patterns, it detects subtle motor degradation 6-12 months earlier than traditional clinical assessments.
+NeuroType is an AI-powered smartphone application that passively monitors Parkinson's Disease (PD) progression using keystroke dynamics. By analyzing natural typing patterns, it detects subtle motor degradation 6-12 months earlier than traditional clinical assessments.
 
 ## 🔍 Problem Addressed
 Parkinson's disease progression is currently tracked through:
@@ -12,7 +12,7 @@ Parkinson's disease progression is currently tracked through:
 - Subjective MDS-UPDRS assessments
 - Manual symptom diaries with recall bias
 
-**NeuroKey solves these by providing:**  
+**Neurotype solves these by providing:**  
 ✅ Continuous 24/7 monitoring  
 ✅ Objective, data-driven progression scoring  
 ✅ Early detection of motor symptom changes  
